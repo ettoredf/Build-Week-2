@@ -71,6 +71,7 @@ body {
   margin: 0;
   box-sizing: content-box;
 }
+/* COLONNA SINISTRA */
 .navbar-collapse {
   margin-inline-start: 20px;
 }
@@ -79,4 +80,24 @@ p {
   font-size: 15px;
   font-weight: 500;
   color: gray;
+}
+.hr {
+  border-top: 1px solid gray;
+}
+/* COLONNA CENTRALE */
+.bi-chevron-left,
+.bi-chevron-right {
+  border-radius: 100%;
+  background-color: #131313;
+}
+.profile {
+  border-radius: 50px;
+  background-color: #090909;
+  color: white;
+  padding: 1px 0 1px 0; /* si deve aggiustare il padding left a 1px, perchè viene sovrascritto e non capisco perchè */
+}
+.imgProfile {
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
 }
