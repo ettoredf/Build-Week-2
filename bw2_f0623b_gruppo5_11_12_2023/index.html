@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div>
+    <div class="container-fluid">
       <div class="row">
         <div class="col-4 bg-black flex-column text-light">
           <div class="ms-3">
@@ -94,7 +94,7 @@
                   width="16"
                   height="16"
                   fill="currentColor"
-                  class="bi bi-plus"
+                  class="bi bi-plus bg-secondary text-dark"
                   viewBox="0 0 16 16"
                 >
                   <path
@@ -121,19 +121,22 @@
                 <span class="align-middle ms-2"> Brani che ti piacciono</span>
               </div>
               <!-- i tuoi episodi-->
+
               <div class="mb-1">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-bookmark-fill"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2"
-                  />
-                </svg>
+                <button type="button" class="btn btn-success rounded-1 align-middle btn-sm">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15"
+                    height="15"
+                    fill="currentColor"
+                    class="bi bi-bookmark-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2"
+                    />
+                  </svg>
+                </button>
                 <span class="align-middle ms-2"> I tuoi episodi</span>
               </div>
             </nav>
