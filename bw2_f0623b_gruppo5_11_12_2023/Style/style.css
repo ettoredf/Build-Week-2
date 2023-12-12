@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: "Circular";
   src: url(../fonts/CircularStd-Light.otf);
   font-weight: 300;
@@ -63,7 +63,7 @@
   src: url(../fonts/CircularStd-BlackItalic.otf);
   font-weight: 900;
   font-style: italic;
-}
+} */
 * {
   font-family: "Circular", sans-serif;
 }
