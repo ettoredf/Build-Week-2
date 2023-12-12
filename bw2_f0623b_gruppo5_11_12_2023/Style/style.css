@@ -88,16 +88,31 @@ p {
 .bi-chevron-left,
 .bi-chevron-right {
   border-radius: 100%;
-  background-color: #131313;
 }
 .profile {
   border-radius: 50px;
   background-color: #090909;
   color: white;
-  padding: 1px 0 1px 0; /* si deve aggiustare il padding left a 1px, perchè viene sovrascritto e non capisco perchè */
+  padding: 1px 0 1px 0;
 }
+/* Da mandare a Marione */
 .imgProfile {
-  width: 25px;
-  height: 25px;
+  margin-inline-start: -10px;
+  width: 30px;
+  height: 30px;
   border-radius: 100%;
+  vertical-align: middle;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+  color: white;
+}
+.btn {
+  background-color: #090909;
+  padding-block: 0px;
+  padding-inline-start: 0px;
+}
+.dropdown-toggle::after {
+  vertical-align: middle;
 }
