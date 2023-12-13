@@ -80,7 +80,7 @@ const createCard = (obj, cardType) => {
   <div class="card gx-4" id="large">
     <img src="${obj.album.cover}" class="card-img-top" alt="...">
     <div class="card-body d-flex flex-column justify-content-between">
-      <h6 class="card-title m max-h-50 fs-6"><a class="customColorA" href="./album.html?idAlbum=${obj.album.id}">${obj.album.title}</a></h6>
+      <h6 class="card-title m max-h-50 fs-6"><a class="customColo" href="./album.html?idAlbum=${obj.album.id}">${obj.album.title}</a></h6>
       <p class="card-text">${obj.artist.name}</p>
     </div>
   </div>`;
