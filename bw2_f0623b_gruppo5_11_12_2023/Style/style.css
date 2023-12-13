@@ -192,3 +192,12 @@ h6 a {
 ::-webkit-scrollbar-thumb {
   background: rgba(255, 255, 255, 0.254);
 }
+h1 {
+  color: black;
+  justify-content: center;
+}
+
+.titleCard {
+  background: rgb(73, 73, 73);
+  background: linear-gradient(153deg, rgba(73, 73, 73, 1) 0%, rgba(0, 0, 0, 1) 100%);
+}
