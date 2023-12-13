@@ -118,3 +118,48 @@ p {
 .dropdown-toggle::after {
   vertical-align: middle;
 }
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Aggiungi una classe di margini personalizzata senza il padding laterale */
+.no-lr-padding {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.vh-100 {
+  height: 100%;
+}
+
+.nav-link {
+  padding-left: 1em;
+}
+
+.card-body {
+  padding: 5px;
+}
+
+h6 a {
+  text-decoration: none;
+  color: black;
+}
+
+.overflowCustom {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+#large {
+  max-width: 220px;
+  height: 280px;
+  margin-bottom: 5px;
+}
+
+.card-text {
+  justify-content: end;
+}
