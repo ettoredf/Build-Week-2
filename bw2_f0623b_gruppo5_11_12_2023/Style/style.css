@@ -173,6 +173,9 @@ h6 a {
   height: 100vh; /* 80% dell'altezza della viewport */
 }
 
-#contCard1 {
-  height: 100vh;
+#hardCode {
+  height: 62.5vh;
+  color: white;
+  background-color: black;
+  padding-left: 1em;
 }
