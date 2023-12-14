@@ -39,7 +39,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 1000);
   });
 
-  getPlaylists("linkin park", "firstAlbum", "large");
+  getPlaylists("Linkin Park", "smallIcons", "small");
+  getPlaylists("Linkin Park", "firstAlbum", "large");
   getPlaylists("Sabaton", "secondAlbum", "large");
   getPlaylists("Metallica", "contenitore3", "large");
   getPlaylists("Slayer", "contenitore4", "large");
@@ -55,35 +56,27 @@ const generateCardList = (arrayObj, container, cardType) => {
 };
 
 const createCard = (obj, cardType) => {
-  if (cardType == "small") {
-    const card = document.createElement("div");
-    card.className = "col"; // Modifica della classe a "col-2" per occupare il 100% del contenitore
-    card.innerHTML = `
-        <div class="card mb-2 p-0"> <!-- Aggiunta di margini e padding -->
-            <div class="row g-0">
-                <div class="col-auto">
-                <img src="${obj.album.cover}" class="card-img-top" alt="..."
-                </div>
-                <div class="col-10">
-                    <div class="card-body">
-                    <h6 class="card-title m max-h-50 fs-6"><a class="customColorA" href="./album.html?idAlbum=${obj.album.id}">${obj.album.title}</a></h6>
-                    </div>
-                </div>
-            </div>
-        </div>
-        `;
-    return card;
-  } else if (cardType == "large") {
+  if (cardType == "large") {
     const card = document.createElement("div");
     card.className = "col";
     card.innerHTML = `
-  <div class="card gx-4" id="large">
-    <img src="${obj.album.cover}" class="card-img-top" alt="...">
-    <div class="card-body d-flex flex-column justify-content-between">
-      <h6 class="card-title m max-h-50 fs-6"><a class="customColo" href="./album.html?idAlbum=${obj.album.id}">${obj.album.title}</a></h6>
-      <p class="card-text">${obj.artist.name}</p>
-    </div>
-  </div>`;
+    <div class="card gx-4" id="large">
+      <img src="${obj.album.cover}" class="card-img-top" alt="...">
+      <div class="card-body d-flex flex-column justify-content-between">
+        <h6 class="card-title m max-h-50 fs-6" id="nomeAlbum"><a class="customColo" href="./autore.html?idAlbum=${obj.album.id}">${obj.album.title}</a></h6>
+        <p class="card-text">${obj.artist.name}</p>
+      </div>
+    </div>`;
+
+    const cardContainer = card.querySelector(".card");
+    cardContainer.addEventListener("mouseover", () => {
+      cardContainer.style.backgroundColor = "gray";
+    });
+
+    cardContainer.addEventListener("mouseout", () => {
+      cardContainer.style.backgroundColor = "";
+    });
+
     return card;
   }
 };
