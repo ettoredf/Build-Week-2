@@ -251,15 +251,20 @@ h1 {
 }
 #play {
   background-color: #1db954;
+  padding-inline: 20px;
 }
 
 #salva {
+  padding-inline: 20px;
+  border: 0.5px solid white;
   background-color: transparent;
+  color: white;
 }
 
 .buttons {
   position: absolute;
-  bottom: -60px;
+  bottom: -150px;
+  padding-inline: 10px;
 }
 
 #card1 {
