@@ -190,7 +190,7 @@
         <div class="col-8 px-0 overflow-auto" id="contCard2">
           <!-- Contenitore 2 -->
           <div class="text-white">
-            <nav class="navbar navbar-expand-lg ">
+            <nav class="navbar navbar-expand-lg">
               <div class="container">
                 <div class="collapse navbar-collapse" id="navbarNav">
                   <ul class="navbar-nav">
@@ -259,22 +259,23 @@
                 </div>
               </div>
             </nav>
+            <!--card-->
             <div class="card mb-3 mx-auto mt-5" style="max-width: 95%" id="card1">
               <div class="row g-0" id="titleCard">
                 <div class="col-md-4 py-4 px-3">
-                  <img src="assets/imgs/search/image-39.jpg" class="img-fluid rounded-start" alt="..." />
+                  <img src="assets/imgs/main/image-1.jpg" class="img-fluid rounded-start" alt="..." />
                 </div>
                 <div class="col-md-7">
-                  <div class="card-body" id="section1">
-                    <div>
-                      <h5 class="card-title text-secondary h6">ALBUM</h5>
-                      <h1 class="card-title fw-bold">VIOLA (ft. Alessio Guida)</h1>
-                      <p class="card-text text-black fw-bold">Alessio & Marione ft Gesù</p>
-                      <p class="card-text text-black fw-bold">Ascolta l'unico singolo</p>
-                    </div>
-                    <div class="buttons">
-                      <button id="play" class="rounded-pill border-0 px-3 py-2">Play</button>
-                      <button id="salva" class="rounded-pill px-3 py-2">Salva</button>
+                  <div class="card-body d-flex flex-column" id="section1">
+                    <h5 class="card-title text-secondary h6" id="ww">ALBUM</h5>
+                    <h1 class="card-title fw-bold" id="ww">VIOLA (ft. Alessio Guida)</h1>
+                    <p class="card-text fw-bold" id="ww">Alessio & Marione ft Gesù</p>
+                    <p class="card-text fw-bold" id="ww">Ascolta l'unico singolo</p>
+
+                    <div class="buttons mt-3">
+                      <!-- Aggiunto un margine superiore di 3 unità di spazio -->
+                      <button id="play" class="rounded-pill border-0 px-10 py-2">Play</button>
+                      <button id="salva" class="rounded-pill px-10 py-2">Salva</button>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="25"
@@ -293,7 +294,7 @@
               </div>
             </div>
             <div class="container mt-5">
-              <h4>Buongiorno fratm!</h2>
+              <h4>Buongiorno fratm!</h4>
               <div class="row" id="smallIcons"></div>
               <div class="row" id="ascoltatiRecenti">
                 <h4>O primm ammor</h4>
@@ -320,16 +321,68 @@
         </div>
         <div class="col-2 px-0">
           <!-- Contenitore 3 -->
-          <div class="bg-black text-white">
-            <h2>Contenitore 3</h2>
-            <p>Contenuto del terzo contenitore</p>
+          <div class="bg-black text-white" id="activity">
+            <div class="mb-5">
+              <span><b>Attività amici</b></span> <span id="addFriend">icona</span> <span id="closeBtn">icona</span>
+            </div>
+            <!--Primo profilo-->
+            <div class="container">
+              <div class="row">
+                <div class="col-2">
+                  <img src="assets/imgs/main/image-5.jpg" class="img-fluid rounded-circle" alt="..." />
+                </div>
+                <div class="col-8">
+                  <h6 class="fw-bold username" id="ww">Alessio Guida</h6>
+                  <p class="listArtist m-1" id="ww">Linkin Park</p>
+                  <div class="iconcinaCD"></div>
+                  <p class="fw-bold listSong" id="ww">Crawling</p>
+                </div>
+                <div class="col-2 p-0">
+                  <p id="pSmall">4 ore fa</p>
+                </div>
+              </div>
+            </div>
+            <!--secondo profilo-->
+            <div class="container">
+              <div class="row">
+                <div class="col-2">
+                  <img src="assets/imgs/main/image-8.jpg" class="img-fluid rounded-circle" alt="..." />
+                </div>
+                <div class="col-8">
+                  <h6 class="fw-bold username" id="ww">Francesco Esposito</h6>
+                  <p class="listArtist m-1" id="ww">Eminem</p>
+                  <div class="iconcinaCD"></div>
+                  <p class="fw-bold listSong" id="ww">Lose yourself</p>
+                </div>
+                <div class="col-2 p-0">
+                  <p id="pSmall">4 ore fa</p>
+                </div>
+              </div>
+            </div>
+            <!--terezo profilo-->
+            <div class="container">
+              <div class="row">
+                <div class="col-2">
+                  <img src="assets/imgs/main/image-9.jpg" class="img-fluid rounded-circle" alt="..." />
+                </div>
+                <div class="col-8">
+                  <h6 class="fw-bold username" id="ww">Ettore di Francesco</h6>
+                  <p class="listArtist m-1" id="ww">Metallica</p>
+                  <div class="iconcinaCD"></div>
+                  <p class="fw-bold listSong" id="ww">Enter Sandman</p>
+                </div>
+                <div class="col-2 p-0">
+                  <p id="pSmall">4 ore fa</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- Bootstrap JavaScript (non è più necessario jQuery) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/script.js"></script>
+      <!-- Bootstrap JavaScript (non è più necessario jQuery) -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/js/script.js"></script>
+    </div>
   </body>
 </html>

@@ -268,3 +268,33 @@ h1 {
   background: linear-gradient(79deg, rgba(0, 0, 0, 1) 0%, rgba(18, 18, 18, 1) 4%, rgba(33, 33, 33, 1) 98%);
   border: none;
 }
+
+#ciao {
+  background-color: red;
+}
+
+#ww {
+  color: white;
+}
+
+#activity {
+  height: 100%;
+}
+
+.ww2,
+#pSmall,
+.listArtist {
+  font-size: x-small;
+}
+
+#card2 {
+  background-color: black;
+}
+#section1 h6 {
+  font-size: small;
+}
+
+#spanSmall,
+.listSong {
+  font-size: 11px;
+}
